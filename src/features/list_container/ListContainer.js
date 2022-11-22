@@ -50,6 +50,8 @@ export default function ListContainer() {
   function submitNewTodo(event) {
     event.preventDefault();
     dispatch(addTodo(newTodoText));
+    setNewTodoText("");
+    setIsAddingTodo(false);
   }
 
   // handle change of text inside new todo text input
