@@ -1,0 +1,16 @@
+.search-bar-form {
+  inline-size: 100%;
+  margin-block-end: 1rem;
+}
+
+.search-bar-form input[type="text"] {
+  inline-size: calc(100% - 1rem - 4px);
+  block-size: 2rem;
+  font-size: 1rem;
+  padding-inline: 0.5rem;
+  outline-color: blue;
+}
+
+.search-bar-form input[type="text"].dark {
+  border-color: #FFF;
+}

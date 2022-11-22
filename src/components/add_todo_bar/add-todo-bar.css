@@ -1,0 +1,38 @@
+.add-todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 1rem;
+}
+.add-todo-form input[type="text"] {
+  inline-size: 87%;
+  block-size: 2rem;
+  font-size: 1rem;
+  padding-inline: 0.5rem;
+  outline-color: blue;
+}
+
+.add-todo-form input[type="text"].dark {
+  border-color: #FFF;
+}
+
+.add-todo-form button {
+  inline-size: 10%;
+  block-size: calc(2rem + 6px);
+  padding: 0;
+}
+
+.add-todo-form button:hover,
+.add-todo-form button:focus {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  .add-todo-form button {
+    inline-size: 20%;
+  }
+
+  .add-todo-form input[type="text"] {
+    inline-size: 77%;
+  }
+}

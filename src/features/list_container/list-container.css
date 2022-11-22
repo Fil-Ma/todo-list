@@ -1,0 +1,44 @@
+main {
+  inline-size: 80%;
+  padding: 4% 10%;
+  min-block-size: calc(96% - 6rem); /* min height */
+}
+
+div.list-container {
+  inline-size: 60%;
+  margin-inline: auto;
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+}
+
+div.list-container.light {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+div.list-container.dark {
+  box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.list-container h2 {
+  margin-block-end: 3rem;
+}
+
+
+@media only screen and (max-width: 700px) {
+  main {
+    padding: 4% 5%;
+    inline-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    padding: 3%;
+    inline-size: 94%;
+  }
+
+  div.list-container {
+    inline-size: 70%;
+  }
+}

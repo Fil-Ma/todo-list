@@ -1,0 +1,33 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  block-size: 2rem;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  margin-block-end: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+div.status {
+  inline-size: 2rem;
+}
+
+div.description {
+  text-align: left;
+}
+
+button.status {
+  padding: 0 0.5rem;
+  background-color: inherit;
+}
+
+.beating-icon {
+  animation: beat 3s linear 0s; /* animation name | duration | type | delay */
+}
+
+@keyframes beat {
+  0%, 50%, 100% { transform: scale(1, 1); }
+  30%, 80% { transform: scale(1.4, 1.4); }
+}
