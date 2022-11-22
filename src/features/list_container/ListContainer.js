@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 
 import { ThemeContext } from "../../app/contexts/ThemeContext";
 import FilterFunction from "../filter/FilterFunction";
-import ToDo from "../../components/todo/ToDo";
 import Toolbar from "../../components/toolbar/Toolbar";
 import SearchBar from "../../components/search_bar/SearchBar";
 import AddTodoBar from "../../components/add_todo_bar/AddTodoBar";
@@ -49,7 +48,9 @@ export default function ListContainer() {
   // handle addition of a new todo
   function submitNewTodo(event) {
     event.preventDefault();
-    dispatch(addTodo(newTodoText));
+    if (newTodoText.length > 1) {
+      dispatch(addTodo(newTodoText));
+    }
     setNewTodoText("");
     setIsAddingTodo(false);
   }
