@@ -5,32 +5,7 @@ import App from '../app/App';
 import Header from "../components/header/Header";
 
 import { Provider } from 'react-redux';
-import configureStore from 'redux-mock-store';
-
-const initialState = { 
-    todos: { 
-        todos: [
-            {
-                id: 101,
-                text: "Write some code",
-                completed: true
-            },
-            {
-                id: 102,
-                text: "Add some styling",
-                completed: true
-            },
-            {
-                id: 103,
-                text: "Deploy",
-                completed: false
-            },
-        ],
-        visibilityFilter: "SHOW_ALL",
-    }
- };
-const mockStore = configureStore();
-let store = mockStore(initialState);
+import store from "../app/store";
 
 test('App renders correctly', () => {
     render(
@@ -38,7 +13,6 @@ test('App renders correctly', () => {
             <App />
         </Provider>
     )
-
 })
 
 test('Header component renders correctly', () => {
@@ -46,3 +20,10 @@ test('Header component renders correctly', () => {
     expect(screen.getByRole("heading")).toHaveTextContent("To Do App");
     expect(screen.getByRole("button")).toBeInTheDocument();
 })
+
+// themed button
+// search_bar
+// todo
+// todo list
+// toolbar
+// test redux
