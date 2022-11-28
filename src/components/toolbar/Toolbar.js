@@ -3,7 +3,7 @@ import React from "react";
 
 import ThemedButton from "../button/ThemedButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faPlus, faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function Toolbar({
   handleClickSearch,
