@@ -5,6 +5,7 @@ import { ThemeContext } from "../../app/contexts/ThemeContext";
 export default function SearchBar({ setSearchValue }) {
   const theme = useContext(ThemeContext);
 
+  // handle search of value
   function handleChangeSearchValue(event) {
     event.preventDefault();
     const lowerCaseInput = event.target.value.toLowerCase();
